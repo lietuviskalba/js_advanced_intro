@@ -2,3 +2,6 @@
 function sectionNameSeparator(sectionName) {
     console.log("###\n ---", sectionName, "\n###")
 }
+function TopicNameSeparator(topicName) {
+    console.log("@@@@@\n*", topicName, "*\n@@@@@")
+}

@@ -1,4 +1,6 @@
+TopicNameSeparator("Scope")
 // Global var change
+sectionNameSeparator("Changing global variable")
 var thisIsAGlobalVar = "This is a variable";
 
 function functionThatChangesGlobalVar() {
@@ -12,10 +14,11 @@ function functionThatChangesGlobalVar() {
     console.log(thisIsAGlobalVar);
 }
 
-sectionNameSeparator("Changing global variable")
 functionThatChangesGlobalVar()
 
 // Global and local var change
+sectionNameSeparator("Local var prioritized over global")
+
 var myVar = "I am a variable global"
 
 function localFirstOverGlobal() {
@@ -26,10 +29,18 @@ function localFirstOverGlobal() {
     console.log(myVar);
 }
 
-sectionNameSeparator("Local var prioritized over global")
 localFirstOverGlobal()
 
-// Easier and a more clear section separation to see on console
-function sectionNameSeparator(sectionName) {
-    console.log("###\n ---", sectionName, "\n###")
+// Let and const
+sectionNameSeparator("Let and const")
+
+let stringExampleInsideAndOut = "I am a LET global string"
+
+if (true) {
+    let stringExampleInsideAndOut = "I am a LET string inside the if scope"
+    console.log("Inside: ", stringExampleInsideAndOut);
 }
+console.log("Outside: ", stringExampleInsideAndOut);
+
+const constVariable = "This cannot changed as it a constant, use it also for functions, objects...";
+console.log(constVariable);
