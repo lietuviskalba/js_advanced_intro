@@ -1,4 +1,4 @@
-TopicNameSeparator("Scope")
+topicNameSeparator("Scope")
 // Global var change
 sectionNameSeparator("Changing global variable")
 var thisIsAGlobalVar = "This is a variable";

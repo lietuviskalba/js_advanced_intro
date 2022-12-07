@@ -1,4 +1,4 @@
-TopicNameSeparator("Advanced control flow")
+topicNameSeparator("Advanced control flowtopicNameSeparator")
 
 // ternary operator
 sectionNameSeparator("Ternary operator")

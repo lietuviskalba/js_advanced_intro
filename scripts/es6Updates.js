@@ -1,4 +1,4 @@
-TopicNameSeparator("ES6")
+topicNameSeparator("ES6")
 
 // Deconstruction
 sectionNameSeparator("Deconstruction")
