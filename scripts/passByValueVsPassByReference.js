@@ -9,7 +9,7 @@ console.log("Number, string, boolean: ", someNumber, someString, someBoolean);
 
 sectionNameSeparator("Pass by Reference");
 
-const exampleObject = {
+const defaultExampleObject = {
     someNumber: 10,
     nestedObject: {
         someNestedString: "I am a deep level string UNCHANGED"
@@ -17,13 +17,13 @@ const exampleObject = {
 }
 
 //Pass by reference
-const passByReferenceObject = exampleObject;
+const passByReferenceObject = defaultExampleObject;
 console.log("***Object passed by reference: ");
 console.log("Object passed by reference: ", passByReferenceObject);
 
-const shallowClone1 = Object.assign({}, exampleObject);
-const shallowClone2 = { ...exampleObject };
-const deepClone = JSON.parse(JSON.stringify(exampleObject));
+const shallowClone1 = Object.assign({}, defaultExampleObject);
+const shallowClone2 = { ...defaultExampleObject };
+const deepClone = JSON.parse(JSON.stringify(defaultExampleObject));
 
 //Shallow clone
 console.log("***Shallow clones: ");

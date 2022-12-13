@@ -1,7 +1,7 @@
 topicNameSeparator("Advanced loops");
 
-const exampleArray = [2, 4, 16, 32, 64];
-const exampleObject = {
+const exampleArrayForLoops = [2, 4, 16, 32, 64];
+const exampleObjectForLoops = {
     someString: "Some string value",
     someNumber: 10,
     someBool: true
@@ -26,14 +26,14 @@ function forOfIterating(elementToLoop) {
 
 sectionNameSeparator("For OF");
 console.log("Iterating thorough array values: ");
-forOfIterating(exampleArray);
+forOfIterating(exampleArrayForLoops);
 
 sectionNameSeparator("For IN");
 console.log("Enumerating thorough object properties: ");
-forInEnumerating(exampleObject);
+forInEnumerating(exampleObjectForLoops);
 
 sectionNameSeparator("Switch array and object for in and of");
 console.log("Array enumerated: ");
-forInEnumerating(exampleArray);
+forInEnumerating(exampleArrayForLoops);
 console.log("Object iterated: ");
-forOfIterating(exampleObject);
+forOfIterating(exampleObjectForLoops);
