@@ -47,6 +47,7 @@ class Worker extends User {
 const worker1 = new Worker("Alice", "Basic");
 const worker2 = new Worker("Bob", "Advanced");
 const worker3 = new Worker("Cindy", "Basic");
+const user1 = new User("User example 1", "Test");
 
 console.log(worker1.checkWorkerType());
 console.log(worker1.userGreeting());
@@ -54,3 +55,4 @@ console.log(worker2.checkWorkerType());
 console.log(worker2.userGreeting());
 console.log(worker3.checkWorkerType());
 console.log(worker3.userGreeting());
+console.log(user1.userGreeting());
